@@ -6,8 +6,4 @@ app.get("/", (req, res) => res.send("Hello from Devtron + Git Flow 🚀"));
 
 app.get("/about", (req, res) => res.send("This is Hello World App - About Page!"));
 
-app.get('/contact', (req, res) => {
-  res.json({ email: "gaurav@example.com", phone: "123-456-7890" });
-});
-
 app.listen(port, () => console.log(`App running at http://localhost:${port}`));
