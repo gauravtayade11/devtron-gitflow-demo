@@ -103,7 +103,7 @@ pipeline {
     post {
         success {
             script {
-                if (env.BRANCH_NAME ==~ /feature-.*/ ) {
+                if (env.BRANCH_NAME == 'feature/add-tests' ) {
                     echo "🚀 Commit detected on develop branch → Triggering Devtron Deployment with nginx image"
 
                     // 🔑 Securely pass token from Jenkins Credentials
